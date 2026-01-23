@@ -3,9 +3,16 @@ main {
     margin: 0 auto;
 }
 
-nav a {
-    background-color: white;
+nav {
+    background-color: steelblue;
     padding: 10px;
+}
+
+nav a {
+    color: white;
+    padding: 10px;
+    display: block;
+    text-decoration: none;
 }
 
 h1 {
@@ -21,7 +28,7 @@ main img {
 }
 
 p {
-    padding: 0px;
+    padding: 0;
 }
 
 aside {
