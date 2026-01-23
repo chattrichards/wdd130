@@ -1,31 +1,29 @@
 main {
     max-width: 840px;
-}
-
-p {
-    padding: 10px;
+    margin: 0 auto;
 }
 
 nav a {
-    color: #white;
+    color: white;
     padding: 10px;
     display: block;
+    text-decoration: none;
 }
 
 h1 {
-    color: #steelblue;
+    color: steelblue;
 }
 
 main img {
     width: 150px;
     height: auto;
-    border: 1px solid #steelblue;
+    border: 1px solid steelblue;
     padding: 2px;
-    box-shadow: 0 0 30px #gray;
+    box-shadow: 0 0 30px gray;
 }
 
 p {
-    padding: 0;
+    padding: 10px;
 }
 
 aside {
