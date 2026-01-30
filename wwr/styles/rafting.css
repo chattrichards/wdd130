@@ -1,0 +1,190 @@
+/* CSS Variables for consistent theming */
+:root {
+    --primary-color: #1a5f7a;
+    --secondary-color: #57cc99;
+    --accent1-color: #22577a;
+    --accent2-color: #ffd166;
+    --heading-font: "Trebuchet MS", "Georgia", serif;
+    --body-font: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Reset default margins and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Base body styles */
+body {
+    font-family: var(--body-font);
+    color: var(--accent1-color);
+    line-height: 1.6;
+    background-color: #f8f9fa;
+}
+
+/* Center main content sections */
+header,
+main,
+footer {
+    width: 840px;
+    margin: 0 auto;
+}
+
+/* Header and navigation styles */
+header {
+    background-color: var(--primary-color);
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0 0 8px 8px;
+}
+
+header img {
+    border-radius: 4px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: var(--secondary-color);
+    color: var(--accent1-color);
+}
+
+/* Heading styles */
+h1,
+h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+    border-bottom: 2px solid var(--accent2-color);
+    padding-bottom: 0.5rem;
+}
+
+/* Content spacing */
+nav,
+p,
+section,
+article {
+    margin: 16px;
+    padding: 8px;
+}
+
+/* Hero section with overlay */
+.hero {
+    position: relative;
+    margin: 2rem 0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    opacity: 0.7;
+    background-color: var(--accent1-color);
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.hero article {
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+    width: 300px;
+    padding: 1.5rem;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+.hero article img {
+    float: right;
+    width: 125px;
+    margin-left: 1rem;
+    margin-bottom: 0.5rem;
+    border-radius: 4px;
+    border: 2px solid var(--secondary-color);
+}
+
+.hero article p {
+    margin: 0;
+    padding: 0;
+    font-style: italic;
+    color: var(--accent1-color);
+}
+
+/* History section */
+section {
+    background-color: white;
+    padding: 2rem;
+    margin: 2rem 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* Footer styles */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1.5rem;
+    border-radius: 8px 8px 0 0;
+    margin-top: 2rem;
+}
+
+.socialmedia {
+    display: flex;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+.socialmedia a {
+    text-decoration: none;
+    transition: transform 0.3s;
+}
+
+.socialmedia a:hover {
+    transform: scale(1.1);
+}
+
+.socialmedia img {
+    width: 32px;
+    height: 32px;
+    filter: brightness(0) invert(3);
+}
